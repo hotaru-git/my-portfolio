@@ -1,0 +1,104 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="全ての検索エンジン">
+    <meta property="og:description"
+        content="">
+    <meta name="description"
+        content="検索機能一つであらゆるブラウザ、SNSで検索が行えます。">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" rel="stylesheet">
+    <link href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" rel="stylesheet" />
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="apple-touch-icon" href="images/logo.jpg">
+
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+    <title>検索エンジン一括り</title>
+</head>
+
+<body id="body" href="#" ontouchstart="">
+    <h1 class="search_logo">hotagle</h1>
+    <div class="container">
+        <form id="form" method="GET" action="https://www.google.co.jp/search">
+            <input id="text" name="q" type="text" class="autocomplete" style="z-index:999;" name="" value=""
+                placeholder="検索ワードを入力" target="_blank">
+            <input type=hidden name=hl value="ja">
+            <input id="hidden" type=submit name=btnG>
+        </form>
+
+        <div id="genre" class="genre opacity">
+
+            <div class="genre__group genre__top">
+                <p class="genre__ttl">検索エンジン<i class="fas fa-laptop genre__icon"></i></p>
+                <ul class="genre__ul">
+                    <a id="googleBtn" href="#" class="genre__item genre__itemS genre__google" target="">
+                        <p class="genre__txt">Google検索<i class="fas fa-search genre__icon"></i></p>
+                    </a>
+
+                    <a id="yahooBtn" type="button" href="#" target="" class="genre__item genre__itemS genre__yahoo">
+                        <p class="genre__txt">Yahoo検索<i class="fas fa-search genre__icon"></i></p>
+                    </a>
+
+                    <a id="bingBtn" type="button" href="#" target="" class="genre__item genre__itemS genre__bing">
+                        <p class="genre__txt">Bing検索<i class="fas fa-search genre__icon"></i></p>
+                    </a>
+                </ul>
+            </div>
+            
+
+            <div class="genre__group">
+                <p class="genre__ttl">ショッピング<i class="fas fa-shopping-cart genre__icon"></i></p>
+                <ul class="genre__ul">
+                    <a id="amazonBtn" type="button" href="#" target="" class="genre__item genre__itemS genre__amazon">
+                        <p class="genre__txt">Amazon検索<i class="fas fa-search genre__icon"></i></p>
+                    </a>
+                    <a id="rakutenBtn" type="button" href="#" target="" class="genre__item genre__itemS genre__rakuten">
+                        <p class="genre__txt">楽天検索<i class="fas fa-search genre__icon"></i></p>
+                    </a>
+
+                    <a id="merukariBtn" type="button" href="#" target=""
+                        class="genre__item genre__itemS genre__merukari">
+                        <p class="genre__txt">メルカリ検索<i class="fas fa-search genre__icon"></i></p>
+                    </a>
+
+                </ul>
+            </div>
+            <div class="genre__group">
+                <p class="genre__ttl">SNS<i class="far fa-comments genre__icon"></i></p>
+                <ul class="genre__ul">
+                    <a id="youtubeBtn" type="button" href="#" target="" class="genre__item genre__youtube">
+                        <p class="genre__txt">YouTube検索<i class="fas fa-search genre__icon"></i></p>
+                    </a>
+
+                    <a id="twitterBtn" type="button" href="#" target="" class="genre__item genre__twitter">
+                        <p class="genre__txt">Twitter検索<i class="fas fa-search genre__icon"></i></p>
+                    </a>
+
+                    <a id="instagramBtn" type="button" href="#" target="" class="genre__item  genre__instagram">
+                        <p class="genre__txt">Instagram検索<i class="fas fa-search genre__icon"></i></p>
+                    </a>
+                    <a id="tiktokBtn" type="button" href="#" target="" class="genre__item  genre__tiktok">
+                        <p class="genre__txt">TikTok検索<i class="fas fa-search genre__icon"></i></p>
+                    </a>
+                </ul>
+            </div>
+            
+            <div class="genre__group">
+                <a type="button" href="https://gather-traveller.com/" target="" class="genre__item  genre__back">
+                    <p class="genre__txt">戻る</p>
+                </a>
+            </div>
+
+            
+        </div>
+    </div>
+    <script src="assets/js/search.js"></script>
+</body>
+
+</html>
